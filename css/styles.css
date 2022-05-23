@@ -51,6 +51,7 @@ select {
 /* ===============================================
 STYLES
 =============================================== */
+/* Index page */
 body {
   background-color: var(--white);
 }
@@ -76,15 +77,23 @@ body {
   justify-content: center;
 }
 
-.main-button:link,
-.main-button:visited {
+.main-button {
   border: solid 1px var(--primary);
   background-color: var(--primary);
   color: var(--white) !important;
 }
 
-.main-button:hover,
-.main-button:active {
+.main-button:hover {
   background-color: var(--white);
   color: var(--primary) !important;
+}
+
+/* Modals */
+body.modal-open {
+  padding-right: 0 !important;
+}
+
+/* Used to fix Login modal right margin stying bug. */
+div.modal-dialog {
+  margin-right: 0.5rem !important;
 }

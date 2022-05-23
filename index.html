@@ -58,11 +58,33 @@
   <div class="row">
     <div class="col-1"></div>
     <div class="col-10 d-grid gap-4">
-      <a href="" class="btn btn-lg main-button">Search Venues</a>
+      <button type="button" class="btn btn-lg main-button"
+        data-bs-toggle="modal" data-bs-target="#venuesLoginModal">
+        Search Venues
+      </button>
+
       <a href="" class="btn btn-lg main-button">Search Performers</a>
       <a href="" class="btn btn-lg main-button">Search Events</a>
     </div>
     <div class="col-1"></div>
+  </div>
+
+  <!-- Modals -->
+  <!-- Venues Modal -->
+  <div class="modal fade" id="venuesLoginModal" tabindex="-1"
+    aria-labelledby="venuesLoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="venuesLoginModalLabel">Sign In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div>
+    </div>
   </div>
 
 
