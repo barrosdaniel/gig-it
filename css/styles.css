@@ -75,3 +75,16 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.main-button:link,
+.main-button:visited {
+  border: solid 1px var(--primary);
+  background-color: var(--primary);
+  color: var(--white) !important;
+}
+
+.main-button:hover,
+.main-button:active {
+  background-color: var(--white);
+  color: var(--primary) !important;
+}
