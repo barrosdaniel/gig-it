@@ -89,7 +89,7 @@ body {
   color: var(--primary) !important;
 }
 
-/* Modals */
+/* Index Page Modals */
 body.modal-open {
   padding-right: 0 !important;
 }
@@ -109,4 +109,54 @@ div.modal-dialog {
   cursor: pointer;
   display: inline-block;
   margin-bottom: 1rem;
+}
+
+/* Venue Search page */
+h2.page-title {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.date-input,
+.location-input {
+  font-size: 1.1rem !important;
+}
+
+/* Venue Results Page */
+.card {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.search-results {
+  padding-bottom: 4rem;
+}
+
+.bottom-nav {
+  padding: 0;
+  background-color: var(--gray-dark);
+  color: var(--white);
+}
+
+.bottom-nav-button {
+  width: 33.3333%;
+  border-right: 1px solid var(--gray);
+  color: var(--gray-light) !important;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-nav-button:nth-last-of-type() {
+  border: 1px solid transparent;
+}
+
+.bi {
+  font-size: 2.25rem;
 }
