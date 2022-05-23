@@ -78,6 +78,7 @@ body {
 }
 
 .main-button {
+  width: 100%;
   border: solid 1px var(--primary);
   background-color: var(--primary);
   color: var(--white) !important;
@@ -95,5 +96,17 @@ body.modal-open {
 
 /* Used to fix Login modal right margin stying bug. */
 div.modal-dialog {
-  margin-right: 0.5rem !important;
+  margin: 17rem 1rem auto !important;
+}
+
+.email-input,
+.password-input {
+  font-size: 1.1rem !important;
+}
+
+.modal-link {
+  color: var(--primary) !important;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
