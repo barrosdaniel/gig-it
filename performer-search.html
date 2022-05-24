@@ -10,13 +10,15 @@
     rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>GigIt! - Performer Search</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="page-start">
     <div class="container-fluid">
       <div class="col-2">
         <a class="navbar-brand" href="index.html">
@@ -50,7 +52,7 @@
   <div class="row my-5">
     <div class="col-1"></div>
     <div class="col-10 text-center">
-      <h2 class="page-title">Venue Search</h2>
+      <h2 class="page-title">Performer Search</h2>
     </div>
     <div class="col-1"></div>
   </div>
@@ -60,27 +62,43 @@
     <div class="col-10 d-grid gap-4">
       <form>
         <div class="mb-4">
-          <label for="venue-search-date" class="form-label">Date</label>
+          <label for="performer-search-date" class="form-label">Date</label>
           <input type="text" class="form-control date-input"
-            id="venue-search-date">
-        </div>
-        <div class="mb-4 ps-0">
-          <input type="checkbox" class="venue-search-near-input"
-            id="venueSearchNearInput">
-          <label class="form-check-label" for="venueSearchNearInput">&nbsp;Near
-            you</label>
+            id="performer-search-date">
         </div>
         <div class="mb-4">
-          <label for="venue-search-location" class="form-label">Location</label>
+          <label for="performer-search-location"
+            class="form-label">Location</label>
           <input type="text" class="form-control location-input"
-            id="venue-search-location">
+            id="performer-search-location">
         </div>
-        <a href="venue-results.html"
-          class="btn btn-lg main-button mt-2 mb-4">Search Venues</a>
+        <select class="form-select form-select-lg mb-4 performance-type-input"
+          aria-label=".form-select-lg example">
+          <option selected>Performance Type</option>
+          <option value="Music">Music</option>
+          <option value="comedy">Comedy</option>
+          <option value="magic">Magic</option>
+          <option value="talk">Talk</option>
+          <option value="fortune-teller">Fortune teller</option>
+        </select>
+        <a href="performer-results.html"
+          class="btn btn-lg main-button mt-2 mb-4">Search Performers</a>
       </form>
     </div>
     <div class="col-1"></div>
   </div>
+
+  <nav class="navbar fixed-bottom bottom-nav">
+    <a class="bottom-nav-button" href="index.html">
+      <i class="bi bi-arrow-left"></i>
+    </a>
+    <a class="bottom-nav-button" href="index.html">
+      <i class="bi bi-house-door-fill"></i>
+    </a>
+    <a class="bottom-nav-button" href="#page-start">
+      <i class="bi bi-chevron-up"></i>
+    </a>
+  </nav>
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
