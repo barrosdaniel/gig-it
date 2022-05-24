@@ -62,8 +62,10 @@
         data-bs-toggle="modal" data-bs-target="#venuesLoginModal">
         Search Venues
       </button>
-
-      <a href="" class="btn btn-lg main-button">Search Performers</a>
+      <button type="button" class="btn btn-lg main-button"
+        data-bs-toggle="modal" data-bs-target="#performersLoginModal">
+        Search Performers
+      </button>
       <a href="" class="btn btn-lg main-button">Search Events</a>
     </div>
     <div class="col-1"></div>
@@ -94,6 +96,39 @@
                 id="venues-password">
             </div>
             <a href="venue-search.html"
+              class="btn btn-lg main-button mt-2 mb-4">Login</a>
+          </form>
+          <a class="modal-link">Forgot password</a><br>
+          <a class="modal-link">Create GigIt! Account</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Performers Modal -->
+  <div class="modal fade" id="performersLoginModal" tabindex="-1"
+    aria-labelledby="performersLoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="performersLoginModalLabel">Sign In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="performers-email" class="form-label">Email
+                address</label>
+              <input type="email" class="form-control email-input"
+                id="performers-email">
+            </div>
+            <div class="mb-3">
+              <label for="performers-password"
+                class="form-label">Password</label>
+              <input type="password" class="form-control password-input"
+                id="performers-password">
+            </div>
+            <a href="performer-search.html"
               class="btn btn-lg main-button mt-2 mb-4">Login</a>
           </form>
           <a class="modal-link">Forgot password</a><br>
