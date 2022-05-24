@@ -17,7 +17,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -165,4 +166,23 @@ h2.page-title {
 /* Performer Search Page */
 .performance-type-input {
   font-size: 1.1rem !important;
+}
+
+.performer-card {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: solid 1px var(--gray-light);
+  background-color: white;
+  border-radius: 3px;
+}
+
+.performer-card>.image-container {
+  width: 22%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  overflow: hidden;
+}
+
+.performer-card>.text-container {
+  width: 78%;
 }
