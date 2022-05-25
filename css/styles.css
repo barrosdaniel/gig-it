@@ -139,6 +139,7 @@ h2.page-title {
   padding-bottom: 4rem;
 }
 
+/* Bottom Navigation */
 .bottom-nav {
   padding: 0;
   background-color: var(--gray-dark);
